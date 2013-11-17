@@ -1,0 +1,32 @@
+CREATE TABLE worker(
+	tabNumber int NOT NULL,
+	FIO varchar(250) NOT NULL,
+	sex char(10) NULL,
+	dateBirth date NULL,
+	passport varchar(250) NULL,
+	hireDate date NULL,
+	dismissalDate date NULL,
+	position_id int NULL,
+	contacts_id int NULL,
+	dep_id int NULL
+);
+
+CREATE TABLE position(
+	id int NOT NULL,
+	name varchar(50) NOT NULL,
+	salary int NULL
+);
+
+CREATE TABLE department
+(
+	id int NOT NULL,
+	name varchar(50) NOT NULL,
+	phone varchar(50) NULL,
+	chief_id int NULL
+);
+
+CREATE TABLE contacts
+(	id int NOT NULL,
+	adress varchar(250) NULL,
+	phone varchar(50) NOT NULL
+);
